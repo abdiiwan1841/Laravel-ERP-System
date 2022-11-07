@@ -1,0 +1,72 @@
+/* dashboard analytics page css */
+/*------------------------------*/
+#donut-chart .apexcharts-canvas {
+  margin: 0 auto;
+}
+
+.icon-light {
+  color: #b3c0ce;
+}
+
+.show > .btn-outline-secondary.dropdown-toggle {
+  color: #FFFFFF !important;
+}
+
+.activity-content {
+  margin-bottom: 2.13rem;
+}
+
+.sales-info-content h1,
+.sales-info-content h2,
+.sales-info-content h3,
+.sales-info-content h4,
+.sales-info-content h5,
+.sales-info-content h6 {
+  line-height: 0.7;
+}
+
+.widget-todo .dropdown .dropdown-toggle:after {
+  /* widget todo-task list - dropdown arrow position */
+  left: 0.1rem;
+  color: #b3c0ce;
+}
+
+.timeline {
+  padding-right: 0;
+}
+
+.timeline .timeline-text {
+  color: #828D99;
+  font-size: 13px;
+}
+
+.timeline .timeline-content {
+  color: #304156;
+  font-size: 13px;
+  font-weight: 500;
+  padding-left: 0 !important;
+}
+
+.timeline .timeline-time {
+  font-size: 0.8rem !important;
+}
+
+@media screen and (max-width: 1280px) and (min-width: 960px) {
+  .activity-card,
+  .profit-report-card,
+  .sales-card,
+  .growth-card {
+    flex: 0 0 50%;
+    min-width: 50%;
+  }
+}
+
+@media screen and (max-width: 1320px) and (min-width: 1200px) {
+  .dashboard-referral-impression .donut-chart-wrapper ul li {
+    font-size: .8rem;
+  }
+  #primary-line-chart,
+  #warning-line-chart {
+    display: none;
+  }
+}

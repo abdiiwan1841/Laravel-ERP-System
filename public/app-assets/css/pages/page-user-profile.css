@@ -1,0 +1,107 @@
+/* user profile page css */
+/*-----------------------*/
+.page-user-profile .user-profile-images {
+  position: relative;
+}
+
+.page-user-profile .user-profile-images .user-timeline-image {
+  min-height: 150px;
+  object-fit: cover;
+}
+
+.page-user-profile .user-profile-images .user-profile-image {
+  position: absolute;
+  left: 20px;
+  bottom: -65px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.41);
+}
+
+.page-user-profile .user-profile-images .user-profile-card-image {
+  min-height: 190px;
+  object-fit: cover;
+  min-width: 110px;
+}
+
+.page-user-profile .user-profile-images .user-profile-stories-image {
+  max-height: 300px;
+}
+
+.page-user-profile .user-profile-text {
+  position: absolute;
+  bottom: 100px;
+  left: 190px;
+  color: #FFFFFF;
+}
+
+.page-user-profile .user-profile-text .profile-text-color {
+  color: #FFFFFF;
+}
+
+.page-user-profile .user-profile-nav {
+  padding-left: 12rem;
+}
+
+.page-user-profile .user-profile-nav .nav-item .nav-link i {
+  margin-right: 0 !important;
+}
+
+.page-user-profile .user-profile-ellipsis {
+  /* user profile text ellipsis */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.page-user-profile .user-profile-stories.swiper-container .swiper-slide {
+  width: auto !important;
+  cursor: pointer;
+  position: relative;
+}
+
+.page-user-profile .user-profile-stories.swiper-container .swiper-slide .user-swiper-text {
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.page-user-profile .card-header {
+  padding: 1.7rem 1.7rem 0;
+}
+
+.page-user-profile .card-footer {
+  padding: 0 1.7rem 1.7rem;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .page-user-profile .user-profile-images .user-profile-image {
+    /* user profile image positioning */
+    height: 100px;
+    width: 100px;
+    top: 50%;
+    left: 50%;
+    margin-left: -45px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.41);
+  }
+  .page-user-profile .user-profile-text {
+    /* user profile text positioning */
+    top: 50%;
+    left: 50%;
+    margin-left: -60px;
+    margin-top: 50px;
+    color: #475F7B !important;
+    text-align: center !important;
+  }
+  .page-user-profile .user-profile-text .profile-text-color {
+    color: #475F7B;
+  }
+  .page-user-profile .user-profile-nav {
+    /* user profile nav tabs positioning */
+    padding-left: 0rem;
+    padding-top: 8rem;
+  }
+}

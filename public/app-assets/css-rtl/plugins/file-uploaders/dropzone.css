@@ -1,0 +1,88 @@
+/* Dropzone css */
+/* ------------ */
+.dropzone {
+  min-height : 350px;
+  border : 2px dashed #5A8DEE;
+  background : #F2F4F4;
+  position : relative;
+}
+
+.dropzone .dz-message {
+  /* dropzone message customization */
+  font-size : 1.5rem;
+  position : absolute;
+  top : 0;
+  right : 0;
+  width : 100%;
+  height : 100%;
+  margin : 0;
+  color : #5A8DEE;
+  display : -webkit-box;
+  display : -webkit-flex;
+  display : -ms-flexbox;
+  display :         flex;
+  -webkit-box-pack : center;
+  -webkit-justify-content : center;
+  -ms-flex-pack : center;
+          justify-content : center;
+  -webkit-box-align : center;
+  -webkit-align-items : center;
+  -ms-flex-align : center;
+          align-items : center;
+}
+
+.dropzone .dz-message:before {
+  /* dropzone message icon */
+  content : '\ea1b';
+  font-family : 'boxicons';
+  font-size : 3.5rem;
+  position : absolute;
+  top : 12.5rem;
+  right : 50%;
+  width : 80px;
+  height : 80px;
+  display : inline-block;
+  margin-right : -40px;
+  line-height : 1;
+  z-index : 2;
+  color : #5A8DEE;
+  font-weight : normal;
+  -webkit-font-smoothing : antialiased;
+}
+
+.dropzone .dz-preview.dz-image-preview {
+  background : transparent;
+  /* dropzone error message */
+}
+
+.dropzone .dz-preview.dz-image-preview .dz-image {
+  border-radius : 0.267rem;
+}
+
+.dropzone .dz-preview.dz-image-preview .dz-error-message {
+  min-width : 113px;
+  top : 0;
+  right : 0;
+}
+
+.dropzone .dz-preview .dz-remove {
+  font-size : 1.1rem;
+  color : #FF5B5C;
+  line-height : 2rem;
+}
+
+.dropzone .dz-preview .dz-remove:before {
+  content : '\ebac';
+  font-family : 'boxicons';
+  display : inline-block;
+  line-height : 1;
+  z-index : 2;
+  text-indent : 0;
+  font-weight : normal;
+  -webkit-font-smoothing : antialiased;
+}
+
+.dropzone .dz-preview .dz-remove:hover {
+  text-decoration : none;
+  color : #FF2829;
+}

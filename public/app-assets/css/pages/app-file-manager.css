@@ -1,0 +1,269 @@
+/* File manager application css */
+/*------------------------------*/
+.file-manager-application .content-area-wrapper {
+  border: 1px solid #DFE3E7;
+  border-radius: 0.267rem;
+}
+
+.file-manager-application .content-area-wrapper .app-file-overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 7;
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 0.267rem;
+}
+
+.file-manager-application .content-area-wrapper .app-file-overlay.show {
+  visibility: visible;
+  transition: all 0.3s ease;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.file-manager-application .content-area-wrapper .sidebar .app-file-sidebar {
+  width: 260px;
+  height: calc(100vh - 9rem);
+  border-right: 1px solid #DFE3E7;
+  border-top-left-radius: 0.267rem;
+  border-bottom-left-radius: 0.267rem;
+  transition: all 0.3s ease;
+}
+
+.file-manager-application .content-area-wrapper .sidebar .app-file-sidebar .app-file-sidebar-close {
+  position: absolute;
+  right: 0.25rem;
+  top: 0.25rem;
+  cursor: pointer;
+  font-size: 1.25rem;
+  z-index: 5;
+  visibility: hidden;
+}
+
+.file-manager-application .content-area-wrapper .sidebar .app-file-sidebar .app-file-sidebar-left {
+  width: 100%;
+  z-index: 3;
+  background-color: transparent;
+}
+
+.file-manager-application .content-area-wrapper .sidebar .app-file-sidebar .app-file-sidebar-left .add-new-file {
+  padding: 1px 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.file-manager-application .content-area-wrapper .sidebar .app-file-sidebar .app-file-sidebar-left .app-file-sidebar-content {
+  padding: 0 1.7rem 1.7rem;
+  position: relative;
+  height: calc(100% - 6.4rem);
+}
+
+.file-manager-application .content-area-wrapper .sidebar .app-file-sidebar .app-file-sidebar-left .app-file-sidebar-content .file-manager-progress .progress {
+  background-color: #e7edf3;
+}
+
+.file-manager-application .content-area-wrapper .sidebar .app-file-sidebar .app-file-sidebar-left .list-group .list-group-item {
+  padding: 0.6rem 0;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  margin-top: 0;
+}
+
+.file-manager-application .content-area-wrapper .sidebar .app-file-sidebar .app-file-sidebar-left .list-group .list-group-item.active {
+  color: #5A8DEE;
+}
+
+.file-manager-application .content-area-wrapper .sidebar .app-file-sidebar .app-file-sidebar-left .list-group .list-group-item.active::before {
+  content: "";
+  width: 2px;
+  height: 30px;
+  background-color: #5A8DEE;
+  position: absolute;
+  left: -26px;
+}
+
+.file-manager-application .content-area-wrapper .sidebar .app-file-sidebar-info {
+  /* Right Sidebar */
+  box-shadow: -8px 0 18px 0 rgba(25, 42, 70, 0.13);
+  height: calc(100vh - 9rem);
+  width: 357px;
+  border-radius: 0.25rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: #FFFFFF;
+  position: fixed;
+  transform: translateX(110%);
+  transition: all 0.3s ease;
+  z-index: 8;
+  right: 4.4rem;
+  bottom: 4rem;
+  opacity: 0;
+}
+
+.file-manager-application .content-area-wrapper .sidebar .app-file-sidebar-info.show {
+  opacity: 1;
+  transform: translateX(9%) translateY(1px);
+}
+
+.file-manager-application .content-area-wrapper .sidebar .app-file-sidebar-info .card-header {
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+.file-manager-application .content-area-wrapper .sidebar .app-file-sidebar-info .nav-tabs .nav-link {
+  background-color: transparent !important;
+  box-shadow: none;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.file-manager-application .content-area-wrapper .sidebar .app-file-sidebar-info .nav-tabs .nav-link:active, .file-manager-application .content-area-wrapper .sidebar .app-file-sidebar-info .nav-tabs .nav-link.active {
+  color: #5A8DEE !important;
+}
+
+.file-manager-application .content-area-wrapper .content-right {
+  width: calc(100% - 260px);
+  background-color: #FFFFFF;
+}
+
+.file-manager-application .content-area-wrapper .content-right .content-wrapper {
+  padding: 0;
+}
+
+.file-manager-application .content-area-wrapper .content-right .app-file-area .app-file-header {
+  padding: 0.6rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #DFE3E7;
+}
+
+.file-manager-application .content-area-wrapper .content-right .app-file-area .app-file-header .sidebar-toggle {
+  cursor: pointer;
+  position: relative;
+  top: 6px;
+  float: left;
+}
+
+.file-manager-application .content-area-wrapper .content-right .app-file-area .app-file-header .sidebar-toggle i {
+  font-size: 1.75rem;
+}
+
+.file-manager-application .content-area-wrapper .content-right .app-file-area .app-file-content {
+  height: calc(100vh - 12.8rem);
+  position: relative;
+}
+
+.file-manager-application .content-area-wrapper .content-right .app-file-area .app-file-content .app-file-content-logo {
+  padding: 10px 6px;
+  border-bottom: 1px solid #DFE3E7;
+  background-color: #F2F4F4;
+}
+
+.file-manager-application .content-area-wrapper .content-right .app-file-area .app-file-content .app-file-content-logo img {
+  margin: 25px 0;
+}
+
+.file-manager-application .content-area-wrapper .content-right .app-file-area .app-file-content .app-file-name,
+.file-manager-application .content-area-wrapper .content-right .app-file-area .app-file-content .app-file-folder-name {
+  color: #475F7B;
+  margin-bottom: 0.1rem;
+}
+
+.file-manager-application .content-area-wrapper .content-right .app-file-area .app-file-content .app-file-folder .app-file-folder-logo i {
+  color: #b3c0ce;
+}
+
+.file-manager-application .content-area-wrapper .content-right .app-file-area .app-file-content .app-file-info {
+  cursor: pointer;
+}
+
+.file-manager-application .content-area-wrapper .content-right .app-file-area .app-file-content .app-file-info .app-file-edit-icon {
+  color: #bac0c7;
+}
+
+.file-manager-application .content-area-wrapper .app-file-label {
+  /* app file labels */
+  font-family: "Rubik", Helvetica, Arial, serif;
+  letter-spacing: 1px;
+  margin: 1.2rem 0 0.5rem 0;
+  color: #bac0c7;
+}
+
+.app-file-sidebar-info .timeline .timeline-content {
+  font-weight: 500;
+  font-size: 13px;
+  color: #304156;
+}
+
+.app-file-sidebar-info .timeline .timeline-time {
+  font-size: 0.8rem;
+}
+
+.app-file-sidebar-info .timeline .timeline-text {
+  font-size: 0.8rem;
+  color: #828D99;
+}
+
+@media (max-width: 991.98px) {
+  .file-manager-application .content-area-wrapper .sidebar-left {
+    position: relative;
+  }
+  .file-manager-application .content-area-wrapper .sidebar-left .app-file-sidebar {
+    width: auto;
+  }
+  .file-manager-application .content-area-wrapper .sidebar-left .app-file-sidebar-left {
+    background-color: #fafbfb !important;
+    width: 260px !important;
+    height: calc(100vh - 8.9rem);
+    transform: translateX(-110%);
+    transition: transform 0.25s;
+    position: fixed;
+    z-index: 8 !important;
+    left: -2px;
+  }
+  .file-manager-application .content-area-wrapper .sidebar-left .app-file-sidebar-left .app-file-sidebar-close {
+    visibility: visible;
+  }
+  .file-manager-application .content-area-wrapper .sidebar-left.show .app-file-sidebar-left {
+    transform: translateX(13%) translateY(-1px);
+  }
+  .file-manager-application .content-area-wrapper .sidebar-left .app-file-sidebar-info {
+    height: calc(100vh - 9rem);
+  }
+  .file-manager-application .content-area-wrapper .content-right {
+    width: 100%;
+  }
+  .file-manager-application .content-area-wrapper .content-right .app-file-area {
+    width: 100%;
+    border-radius: 0.267rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .file-manager-application .content-area-wrapper .sidebar .app-file-sidebar-info {
+    width: auto;
+    right: 3.95rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .file-manager-application .content-area-wrapper .sidebar-left .app-file-sidebar-left {
+    left: -15px !important;
+  }
+  .file-manager-application .content-area-wrapper .sidebar-left .app-file-sidebar-info.show {
+    transform: translateX(14.5%);
+  }
+}
+
+@media (max-width: 422px) {
+  .file-manager-application .content-area-wrapper .content-right .app-file-area .app-file-content {
+    height: calc(100vh - 13.3rem);
+  }
+  .file-manager-application .app-file-header .app-file-header-icons {
+    display: none;
+  }
+}

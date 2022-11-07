@@ -1,0 +1,43 @@
+/* coming soon page css */
+/*----------------------*/
+.cs-btn-notify {
+  right: 7px;
+  top: 6px;
+}
+
+.coming-soon {
+  /* For counter - font size and color css */
+  font-size: 3rem;
+  color: #324356;
+}
+
+.cs-effect {
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.cs-effect.cs-effect-bounce {
+  animation-name: cs-effect-bounce;
+  animation-timing-function: linear;
+}
+
+@keyframes cs-effect-bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .coming-soon {
+    flex-wrap: wrap;
+  }
+  .coming-soon .clockCard {
+    padding: 0 .5rem !important;
+  }
+}

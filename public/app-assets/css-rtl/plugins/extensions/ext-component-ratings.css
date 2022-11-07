@@ -1,0 +1,7 @@
+.jq-ry-container > .jq-ry-group-wrapper > .jq-ry-group {
+  z-index : 8;
+}
+
+.jq-ry-container > .jq-ry-group-wrapper > .jq-ry-group.jq-ry-rated-group {
+  z-index : 9;
+}

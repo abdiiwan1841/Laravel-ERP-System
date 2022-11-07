@@ -1,0 +1,1 @@
+.draggable{cursor:-webkit-grab;cursor:grab}.gu-unselectable .draggable{cursor:-webkit-grabbing;cursor:grabbing}#dd-with-handle .list-group,#multiple-list-group-a,#multiple-list-group-b{min-height:5.714rem}#dd-with-handle .list-group .handle,.gu-mirror .handle{padding:0 5px;margin-left:5px;background-color:rgba(0,0,0,.1);cursor:move;font-size:1.2rem}
