@@ -10,5 +10,5 @@ ERP system contains adding, editing, and deleting products, suppliers, clients, 
 ![ERP-System34](https://user-images.githubusercontent.com/109177230/201038831-a4bc4d56-4f04-4ae1-91db-8b70235885fb.png)
 ![ERP-System13](https://user-images.githubusercontent.com/109177230/201038944-f966b7f0-dd0b-46b5-9ff1-95eb7a69907f.png)
 
-- For more screenshots [here](screenshots/SCREENSHOTS.md).
+### For more screenshots [here](screenshots/SCREENSHOTS.md).
 
